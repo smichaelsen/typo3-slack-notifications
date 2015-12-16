@@ -1,0 +1,8 @@
+# cat=basic/xxx/011; type=string; label=Slack Webhook Endpoint:Something like https://myslack.slack.com/services/hooks/slackbot?token=qwertyuiop123456789
+slackHookEndpoint =
+
+# cat=basic/xxx/012; type=boolean; label=Catch all exceptions and post them to slack
+registerExceptionHandler = 0
+
+# cat=basic/xxx/013; type=string; label=Channel that receives all exceptions:Channel name without the #
+exceptionChannel = general
