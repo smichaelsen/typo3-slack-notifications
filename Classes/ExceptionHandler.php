@@ -22,7 +22,7 @@ class ExceptionHandler extends ProductionExceptionHandler
      * @param \Exception $exception The exception object
      * @return void
      */
-    public function echoExceptionWeb(\Exception $exception)
+    public function echoExceptionWeb($exception)
     {
         $this->sendToSlack($exception);
         parent::echoExceptionWeb($exception);
@@ -34,7 +34,7 @@ class ExceptionHandler extends ProductionExceptionHandler
      * @param \Exception $exception The exception object
      * @return void
      */
-    public function echoExceptionCLI(\Exception $exception)
+    public function echoExceptionCLI($exception)
     {
         $this->sendToSlack($exception);
         parent::echoExceptionWeb($exception);
